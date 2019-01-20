@@ -1,0 +1,59 @@
+﻿[
+
+  {
+    "id": 1,
+    "name": "Oreo",
+    "description": "I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.",
+    "price": "$9.00",
+    "img": "../Images/items/img1.jpg"
+  },
+
+  {
+    "id": 2,
+    "name": "Chocolat & Sea Salt",
+    "description": "I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.",
+    "price": "$9.00",
+    "img": "../Images/items/img2.jpg"
+  },
+
+  {
+    "id": 3,
+    "name": "VANILLA STRAWBERRY",
+    "description": "I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.",
+    "price": "$9.00",
+    "img": "../Images/items/img3.jpg"
+  },
+
+  {
+    "id": 4,
+    "name": "CHERRY CHEESECAKE",
+    "description": "I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.",
+    "price": "$9.00",
+    "img": "../Images/items/img4.jpg"
+  },
+
+  {
+    "id": 5,
+    "name": "PISTACHIO",
+    "description": "I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.",
+    "price": "$9.00",
+    "img": "../Images/items/img5.jpg"
+  },
+
+  {
+    "id": 6,
+    "name": "HAZELNUT & COOKIES",
+    "description": "I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.",
+    "price": "$9.00",
+    "img": "../Images/items/img6.jpg"
+  },
+
+  {
+    "id": 7,
+    "name": "SALTED CARAMEL SOY",
+    "description": "I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.",
+    "price": "$9.00",
+    "img": "../Images/items/img7.jpg"
+  }
+
+]
