@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/custom.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Styles/Main.css" rel="stylesheet" />
+    <link href="../Styles/Home.css" rel="stylesheet" />
+
+
+    <script src="../Scripts/jquery-3.0.0.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/angular-route.min.js"></script>
+
+    <script src="/App/app.js"></script>
+    <script src="/App/services/shopService.js"></script>
+    <script src="/App/controllers/homeController.js"></script>
+    <script src="/App/controllers/aboutController.js"></script>
+
+</head>
+<body ng-controller="mainController">
+
+    <div class="Header">
+        <div id="nav" class="navbar navbar-fixed-top" data-spy="affix">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Brand</a>
+                    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#/" target="_blank" class="text-uppercase">Home</a></li>
+                        <li><a href="#" target="_blank" class="text-uppercase">Falavers</a></li>
+                        <li><a href="#/about" target="_blank" class="text-uppercase">About</a></li>
+                        <li><a href="#" target="_blank" class="text-uppercase">Contact</a></li>
+                    </ul>
+                    <ul class="nav pull-right navbar-nav">
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="badge">2</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.navbar -->
+     
+    </div>
+        <div id="ContentHolder">
+            <div ng-view>
+
+            </div>
+        </div>
+
+
+
+        <div class="Footer">
+
+        </div>
+    <script>
+
+        $('#nav').affix({
+            offset: {
+                top: $('#ContentHolder').offset().top
+            }
+        });	
+    </script>
+</body>
+</html>
