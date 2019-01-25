@@ -1,0 +1,85 @@
+﻿<head>
+    <link href="../../Styles/Review.css" rel="stylesheet" />
+</head>
+<div ng-controller="reviewController as reviewControllerVM">
+
+    <div class="BGImg pReview">
+        <div class="pRevTitle">
+            <h1>Reviews</h1>
+        </div>
+    </div>
+
+    <div class="section row darkBG reviewR" ng-repeat="review in reviewControllerVM.myReviews">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 content">
+            <div class="Title"><i>{{review.fn}} {{review.ln}}</i></div>
+            <span class="rate" id="rateStars">
+                <i class="star" ng-if="review.rate >= 1"></i>
+                <i class="star" ng-if="review.rate >= 2"></i>
+                <i class="star" ng-if="review.rate >= 3"></i>
+                <i class="star" ng-if="review.rate >= 4"></i>
+                <i class="star" ng-if="review.rate >= 5"></i>
+            </span>
+            <i class="date">Date Published: {{review.date}}</i>
+            <span class="Text">
+                {{review.review}}
+            </span>
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <!--<div class="section row darkBG reviewR">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 content">
+            <div class="Title"><i>Golriz Gharavi</i></div>
+            <span class="rate"><i class="star"></i> <i class="star"></i> <i class="star"></i></span>
+            <i class="date">Date Published: 1/22/2019</i>
+            <span class="Text">
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+            </span>
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>-->
+
+
+    <div class="section row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="Title">Submit a Review</div>
+
+
+            <form name="vm.ReviewForm" class="form-horizontal" >
+                <div class="form-group">
+                    <label for="FirstName">First Name:</label>
+                    <div >
+                        <input type="text" name="FirstName" id="FirstName" ng-model="reviewControllerVM.FirstName" class="form-control" required ng-maxlength="10" ng-minlength="2">
+            
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="LastName" >Last Name:</label>
+                    <div>
+                        <input type="text" name="LastName" id="LastName" ng-model="reviewControllerVM.LastName" class="form-control" required ng-maxlength="20" ng-minlength="2">
+                       
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-3 col-md-offset-2">
+                        <button ng-click="reviewControllerVM.SubmitReview()" class="form-control " > Submit My Review  </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button ng-click="reviewControllerVM.resetForm()" class="form-control">  Reset Form</button>
+                    </div>
+                </div>
+
+            </form>
+
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+</div>
